@@ -1,7 +1,9 @@
 # HOW TO RUN
 ## Prerequisites:
+
 - make sure docker and docker compose are installed and latest versions
 - make sure containers or images named `frontend` and `backend` are not exist on your local machine. If they exists, have to be removed first.
+- run `git clone https://github.com/z320817/landcareresearch.git`
 - run `docker compose up -d`
 
 **Apllication should be up and running.** 
@@ -20,7 +22,8 @@
 
 # Features
 ## Special features used worth to mention:
-- GIT history available per folder `cd Backend` and `git log` or `cd Frontend` and `git log`;
+- GIT history available per repository `git  clone https://github.com/z320817/Frontend.git` and `git log` 
+  or `git clone https://github.com/z320817/Backend.git` and `git log`
 - `.env` file is used to manage and configure GNews API key, Frontend and Backend url's
 - Static frontend build is served with [Nginx](https://nginx.org/en/ "Nginx") (fast and efficient static files server)
 - CORS enabled and controlled with .env file
