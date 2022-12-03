@@ -1,0 +1,41 @@
+<div class="flex-container">
+  <h2 class="mat-display-1">Welcome to the News Searcher</h2>
+  <div class="options-container">
+    <mat-card class="option-wrapper">
+      <mat-card-header>
+        <mat-card-subtitle>Fetch Latest News</mat-card-subtitle>
+        <mat-card-title>News Fetcher</mat-card-title>
+      </mat-card-header>
+      <mat-divider></mat-divider>
+      <mat-card-content>
+        <p>Request 10 latest news titles.</p>
+        <mat-divider></mat-divider>
+      </mat-card-content>
+      <mat-card-actions>
+        <button class="fetch-btn" mat-button>
+          <a class="fetch-btn" mat-button routerLink="/fetch">FETCH</a>
+        </button>
+      </mat-card-actions>
+      <mat-card-footer>
+        <mat-progress-bar mode="indeterminate"></mat-progress-bar>
+      </mat-card-footer>
+    </mat-card>
+    <mat-card class="option-wrapper">
+      <mat-card-header>
+        <mat-card-subtitle>Search By Keyword</mat-card-subtitle>
+        <mat-card-title>News Searcher</mat-card-title>
+      </mat-card-header>
+      <mat-divider></mat-divider>
+      <mat-card-content>
+        <p>Search latest articles by keywords.</p>
+        <mat-divider></mat-divider>
+      </mat-card-content>
+      <mat-card-actions>
+        <a class="search-btn" mat-button routerLink="/search">SEARCH</a>
+      </mat-card-actions>
+      <mat-card-footer>
+        <mat-progress-bar mode="indeterminate"></mat-progress-bar>
+      </mat-card-footer>
+    </mat-card>
+  </div>
+</div>

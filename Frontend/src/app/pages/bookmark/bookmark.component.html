@@ -1,0 +1,17 @@
+<div class="flex-container">
+  <h2 class="mat-display-1">News saved to Bookmarks:</h2>
+</div>
+
+<ng-container *ngIf="bookmarks?.length; else emptyBookmarksTemplate">
+  <div class="articles-container" *ngFor="let bookmark of bookmarks">
+    <app-article
+      [article]="bookmark"
+      type="bookmark"
+      (bookmarkDeleted)="onBookmarkDeleted()"
+    ></app-article>
+  </div>
+</ng-container>
+
+<ng-template #emptyBookmarksTemplate>
+  <div class="bookmarks-container">Bookmarks storage is empty.</div>
+</ng-template>

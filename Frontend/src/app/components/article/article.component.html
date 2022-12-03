@@ -1,0 +1,38 @@
+<mat-card class="article-container">
+  <mat-card-header>
+    <img class="article-image" mat-card-avatar [src]="image" [alt]="title" />
+    <mat-card-title>{{ title }}</mat-card-title>
+    <mat-card-subtitle>{{ description }}</mat-card-subtitle>
+  </mat-card-header>
+  <mat-card-content class="article-content">
+    <p>{{ content | slice : 0 : 250 }}...</p>
+  </mat-card-content>
+  <ng-container *ngIf="type !== 'bookmark'; else bookmarkTemplate">
+    <mat-card-actions align="end">
+      <a
+        class="read-more"
+        mat-button
+        [routerLink]="'/article/' + articleId"
+        [state]="article"
+        ><mat-icon md-18>read_more</mat-icon>Read More</a
+      >
+      <button class="bookmark" mat-raised-button (click)="saveToBookmarks()">
+        Bookmark
+        <mat-icon md-18>bookmark</mat-icon>
+      </button>
+    </mat-card-actions>
+  </ng-container>
+</mat-card>
+
+<ng-template #bookmarkTemplate>
+  <mat-card-actions align="end">
+    <button
+      class="bookmark"
+      mat-raised-button
+      (click)="deleteFromBookmarks(articleId)"
+    >
+      Delete Bookmark
+      <mat-icon md-18>bookmark</mat-icon>
+    </button>
+  </mat-card-actions>
+</ng-template>
