@@ -1,3 +1,9 @@
+# Finished project
+## Where to find finished project?
+- Deployed version is available [via this link](http://yshulman.com/)
+
+**http://yshulman.com/**
+
 # HOW TO RUN
 ## Prerequisites:
 
@@ -12,12 +18,12 @@
 ## Application structure, properties and configuration:
 - Backend: C# (.Net 6)
 - Frontend: Angular 15 (Latest CLI, latest LTS of NodeJS)
-- [Swagger API documentstion](http://localhost/v1/swagger/index.html) is available(if project is up and running)
-![Swagger API documentstion](Frontend/assets/images/swagger.png "Swagger API documentstion")
+- [Swagger API documentstion](http://yshulman.com/v1/swagger/index.html) is available
+![Swagger API documentstion](https://github.com/z320817/landcareresearch/blob/main/Frontend/src/assets/images/swagger.png "Swagger API documentstion")
 - Backend `NewsService` test added. Can be checked with `cd Backend` and `dotnet test`
-![Backend Test](Frontend/assets/images/backend_xunit_test.png "Backend Test")
+![Backend Test](https://github.com/z320817/landcareresearch/blob/main/Frontend/src/assets/images/backend_xunit_test.png "Backend Test")
 - Frontend `app.component` tests added. Can be checked with `cd Frontend` and `npm run test`
-![Frontend Test](Frontend/assets/images/frontend_jasmine_unit_test.png "Frontend Test")
+![Frontend Test](https://github.com/z320817/landcareresearch/blob/main/Frontend/src/assets/images/frontend_jasmine_unit_test.png "Frontend Test")
 
 
 # Features
@@ -29,3 +35,13 @@
 - CORS enabled and controlled with .env file
 - [Angular Material UI](https://material.angular.io/ "Angular Material UI") is used as frontend UI library, UI is responsive
 - Bookmarking functionality added
+- AWS deploy is available
+
+## Fetch news:
+![Fetch news](https://github.com/z320817/landcareresearch/blob/main/Frontend/src/assets/images/fetch.gif "Fetch news")
+
+## Search news:
+![Fetch news](https://github.com/z320817/landcareresearch/blob/main/Frontend/src/assets/images/search.gif "Search news")
+
+## Bookmark news:
+![Bookmark news](https://github.com/z320817/landcareresearch/blob/main/Frontend/src/assets/images/bookmarks.gif "Bookmark news")
